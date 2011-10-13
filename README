@@ -1,0 +1,58 @@
+INTRO
+
+This is a project to define a standard for snow reports or ski conditions
+data, and build some supporting applications and materials.  
+
+
+DESCRIPTION 
+
+Every ski resort has a conditions page, and they all have the
+same data on them, but each one has it's own unique HTML markup that is not
+easy for developers to use.  The resorts want this data out there, but not
+in a developer-friendly format.
+  
+RSS seems like an obvious choice for publishing periodocally updated data on
+the web.  Thewre are lots of good tools for working with RSS in various
+languages, and most developers have worked with it before.  But it turns out
+to be an uncomfortable fit of shoe-horning runs, lifts and weather into a
+format designed for articles.
+
+Fortunately, included in the RSS v2 spec was a way to extend it to include
+data beyond the basic format.  BlogChannel from the RSS inventor, iTunes
+podcasts through Apple, Yahoo's popular media extensions, Digg's (defunct?)
+feed, and many, others have taken advantage of name spaces to extend RSS. 
+
+On this project we will define an RSS v2 extension/namespace to accomodate
+ski resort snow resports data.  
+
+
+TODO
+
+In the short time we have, I would like to accomplish as many of the
+following as possible:
+
+  Define the namespace - Could use help from anyone with XML or
+    standards-writing experience, or any extra eyes really.
+
+  Create sample RSS documents - Create a couple example resorts and phoney
+    RSS documents for their conditions.  
+
+  Write documentation of each tag - Anyone could help with the
+
+  Create a Logo or Badge in the style of the RSS button, so resorts can tag
+    their conditions pages
+
+  Create an xmlns page - Just some HTML with the documentation, example and
+    logo.
+
+  Create a PHP class for resorts to use to help publish their conditions.  
+
+  Create example apps to consume the conditions feeds, such as:
+
+    - A conditions aggregator web site
+    - A conditions phone app
+    - A snow report, weather, road conditions mashup
+    - Fresh powder alerts by SMS
+
+Coders, web/graphic designers, writers, etc welcome to help.  
+
