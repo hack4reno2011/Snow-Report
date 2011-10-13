@@ -11,8 +11,8 @@ same data on them, but each one has it's own unique HTML markup that is not
 easy for developers to use.  The resorts want this data out there, but not
 in a developer-friendly format.
   
-RSS seems like an obvious choice for publishing periodocally updated data on
-the web.  Thewre are lots of good tools for working with RSS in various
+RSS seems like an obvious choice for publishing periodically updated data on
+the web.  There are lots of good tools for working with RSS in various
 languages, and most developers have worked with it before.  But it turns out
 to be an uncomfortable fit of shoe-horning runs, lifts and weather into a
 format designed for articles.
@@ -23,7 +23,7 @@ podcasts through Apple, Yahoo's popular media extensions, Digg's (defunct?)
 feed, and many, others have taken advantage of name spaces to extend RSS. 
 
 On this project we will define an RSS v2 extension/namespace to accomodate
-ski resort snow resports data.  
+ski resort snow reports data.  
 
 
 TODO
@@ -34,7 +34,7 @@ following as possible:
   Define the namespace - Could use help from anyone with XML or
     standards-writing experience, or any extra eyes really.
 
-  Create sample RSS documents - Create a couple example resorts and phoney
+  Create sample RSS documents - Create a couple example resorts and phony
     RSS documents for their conditions.  
 
   Write documentation of each tag - Anyone could help with the
