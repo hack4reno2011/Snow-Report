@@ -14,8 +14,15 @@
 			font-size: 9pt;
 		}
 		
-		h1, h2, h3, h4 {
-			margin: 0 0 0.5em 0;
+		h2, h3, h4 {
+			margin: 0.5em 0 0.5em 0;
+			border-width: 0 0 1px 0;
+			border-style: solid;
+			border-color: #EEEEEE;
+		}
+		
+		img {
+			border: 0 none;
 		}
 
 		#head {
@@ -26,22 +33,39 @@
 		}		
 		
 			#head h1 {
-				font-size: 48pt;
 				margin: 0;
+				font-size: 48pt;
+				font-weight: normal;
 			}
+			
+			#head .tagline {
+				font-size: 150%;
+			} 
 			
 		#main {
 			padding: 12px;
 		}
 		
+		#foot {
+			padding: 24px;
+			background-color: #EEEEEE;
+			text-align: center;
+			border-color: #CCCCCC;
+			border-width: 1px 0 0 0;
+			border-style: solid;
+		}
+		
 		table.elements, 
 		table.entities {
 			margin: 0 0 0 3em;
-			margin-width: 0;
+			border-width: 0;
 		}
 		
 			table.elements thead th, 
 			table.entities thead th {
+				border-color: #666666;
+				border-style: solid;
+				border-width: 0 0 1px 0;
 				vertical-align: top;
 				text-align: left;
 			}
@@ -53,7 +77,13 @@
 				color: #003366;
 			}
 		
-		
+			table.elements th, 
+			table.elements td, 
+			table.entities th, 
+			table.entities td {
+				padding: 4px;
+			}
+			
 		.req {
 			display: block;
 			text-align: center;
@@ -68,18 +98,24 @@
 	<div id="head">
 	
 		<h1>SnowRSS</h1>
-
+		
+		<div class="tagline">
+			An RSS Extension for Snow Conditions Reports
+		</div>
 	</div>
 	
-	<div class="main">
+	<div id="main">
 	
 		<h2>What is SnowRSS</h2>
 
 	
 		<p>
-		SnowRSS is an extension to RSS v2 that provides tags to describe snow, lift and weather conditions for ski resorts.  
+		SnowRSS is an <a href="http://www.disobey.com/detergent/2002/extendingrss2/">extension</a> to <a href="http://cyber.law.harvard.edu/rss/rss.html#hrelementsOfLtitemgt">RSS v2</a> that defines new elements and entities to describe snow, lift and weather conditions for ski resorts.  
 		</p>
-		
+				
+		<p>
+		Publishing snow conditions in SnowRSS allows ski resorts to get their conditions data out to developers and skiers in a format that's easy to use and build on.  
+		</p>
 		
 		<h2>Sample Files</h2>
 		
@@ -249,14 +285,23 @@
 			<td>Indicates the run's standard difficulty level, and should be on of, "Beginner", "Intermediate", "Advanced" or "Foolhardy". </td>
 		</tr>
 		</table>
+		
+		
+		<h2>License</h2>
+		
+		<p>
+		SnowRSS published under the terms of the Attribution/Share Alike Creative Commons license. The author of this document is Harold Paulson.
+		</p>
 
 	</div>
 
 	<div id="foot">
-	Creative Commons Badge Here
+	<a href="http://creativecommons.org/licenses/by-sa/1.0/"><img src="art/ccLogo.gif" alt="Creative Commons License></a>
 	</div>
 	
 </div>
     
+
+
 </body>
 </html>
