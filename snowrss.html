@@ -1,151 +1,262 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
 	<meta charset="utf-8" />
 	<title>SnowRSS Documentation</title>
+	<style type="text/css">
+		
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #ffffff;
+			color: #333366;
+			font-family: tahoma, verdana, sans-serif;
+			font-size: 9pt;
+		}
+		
+		h1, h2, h3, h4 {
+			margin: 0 0 0.5em 0;
+		}
+
+		#head {
+			margin: 0 0 0.5em 0;
+			padding: 1em;
+			background-color: #336699;
+			color: #FFFFFF;
+		}		
+		
+			#head h1 {
+				font-size: 48pt;
+				margin: 0;
+			}
+			
+		#main {
+			padding: 12px;
+		}
+		
+		table.elements, 
+		table.entities {
+			margin: 0 0 0 3em;
+			margin-width: 0;
+		}
+		
+			table.elements thead th, 
+			table.entities thead th {
+				vertical-align: top;
+				text-align: left;
+			}
+			
+			table.elements tbody th, 
+			table.entities tbody th {
+				vertical-align: top;
+				text-align: left;
+				color: #003366;
+			}
+		
+		
+		.req {
+			display: block;
+			text-align: center;
+		}
+		
+	</style>
 </head>
 <body>
 
-<h1>SnowRSS</h1>
+<div id="wrapper">
 
-<h2>What is SnowRSS</h2>
+	<div id="head">
+	
+		<h1>SnowRSS</h1>
 
-<p>
-SnowRSS is an extension to RSS v2 that provides tags to describe snow, lift and weather conditions for ski resorts.  
-</p>
+	</div>
+	
+	<div class="main">
+	
+		<h2>What is SnowRSS</h2>
 
+	
+		<p>
+		SnowRSS is an extension to RSS v2 that provides tags to describe snow, lift and weather conditions for ski resorts.  
+		</p>
+		
+		
+		<h2>Sample Files</h2>
+		
+		<p>
+		Coming soon...
+		</p>
+		
+		<h2>Channel Element Additions</h2>
+		
+		<p>
+		SnowRSS adds several elements to the standard channel section.
+		</p>
+		
+		<table class="elements">
+		<thead>
+		<tr>
+			<th>Element</th>
+			<th>Required</th>
+			<th>Description</th>
+			<th>Example</th>
+		</tr>
+		</thead>
+		
+		<tbody>
+		<tr>
+			<th>resortName</th>
+			<td><span class="req">&bull;</span></td>
+			<td>The name of this ski resort</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>conditionsLink</th>
+			<td><span class="req">&bull;</span></td>
+			<td>The URL to your HTML Conditions page</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>scheduledOpenDate</th>
+			<td></td>
+			<td>The date the resort is scheduled to open.</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Temperature</th>
+			<td></td>
+			<td>Current temperature</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Winds</th>
+			<td></td>
+			<td>Wind speed and direction</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>weatherConditions</th>
+			<td></td>
+			<td>Description of the current weather</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Visibility</th>
+			<td></td>
+			<td>Visibility distance</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Forecast</th>
+			<td></td>
+			<td>Weather forecast</td>
+			<td></td>
+		</tr>
+		<tr>
+		   <th>baseDepth</th>
+			<td></td>
+		   <td>Snow depth at the base</td>
+			<td></td>
+		</tr>
+		<tr>
+		   <th>newSnow24</th>
+			<td></td>
+		   <td>Depth of new snow fallen in the last 24 hours.</td>
+			<td></td>
+		</tr>
+		<tr>
+		   <th>newSnow48</th>
+			<td></td>
+		   <td>Depth of new snow fallen in the last 24 hours.</td>
+			<td></td>
+		</tr>
+		<tr>
+		   <th>stormSnowTotal</th>
+		 	<td></td>
+			<td>Total snow fall from the most recent storm.</td>
+			<td></td>
+		</tr>
+		<tr>
+		   <th>seasonSnowTotal</th>
+		 	<td></td>
+			<td>Total snow fall for the season</td>
+			<td></td>
+		</tr>
+		</tbody>
+		</table>
+		
+		
+		<h2>Item Element Additions</h2>
+		
+		<p> 
+		SnowRSS extends the Item tag with new several entities and elements to describe the status of lifts and runs.  
+		</p>
+		
+		
+		<h3>Additional Entities of Item</h3>
+		
+		<table class="entities">
+		<tr>
+			<th>snowRSSType</th>
+			<td>Each Item element must specify a snowRSSType entity of "lift" or "run" to define the entity type.  Resort features such as terrain parks should be labeled "run".  </td>
+		</tr>
+		</table>
+		
+		<h3>Additional Elements of Item</h3>
+		
+		<h4>Lifts</h4>
+		
+		<table class="entities">
+		<tr>
+			<th>Title</th>
+			<td>The Title element of a lift Item should be used for the lift name.  </td>
+		</tr>
+		<tr>
+			<th>Description</th>
+			<td>The Title element of each Item should be a free form text description of the lift status
+		</tr>
+		<tr>
+			<th>Status</th>
+			<td>Indicate whether the lift is open.  Status must be "open" or "closed".  </td>
+		</tr>
+		<tr>
+			<th>liftType</th>
+			<td>Describe the list type, tow rope, gondola, etc.  </td>
+		</tr>
+		</table>
+		
+		<h4>Runs</h4>
+		
+		<table class="entities">
+		<tr>
+			<th>Title</th>
+			<td>The Title element of a lift Item should be used for the run name.  </td>
+		</tr>
+		<tr>
+			<th>Description</th>
+			<td>The Title element of each Item should be a free form text description of the run status</td>
+		</tr>
+		<tr>
+			<th>Status</th>
+			<td>Indicate whether the run is open.  Status must be "open" or "closed".  </td>
+		</tr>
+		<tr>
+			<th>Conditions</th>
+			<td>Describe the snow conditions on the run, "Powder", "Groomed Snow", "Brush and Rocks", etc. </td>
+		</tr>
+		<tr>
+			<th>Difficulty</th>
+			<td>Indicates the run's standard difficulty level, and should be on of, "Beginner", "Intermediate", "Advanced" or "Foolhardy". </td>
+		</tr>
+		</table>
 
-<h2>Sample Files</h2>
+	</div>
 
-
-
-<h2>Channel Element Additions</h2>
-
-<p>
-SnowRSS adds several elements to the standard channel section.
-</p>
-
-<table class="elements">
-<tr>
-	<th>resortName</th>
-	<td>The name of this ski resort</td>
-</tr>
-<tr>
-	<th>conditionsLink</th>
-	<td>The URL to your HTML Conditions page</td>
-</tr>
-<tr>
-	<th>scheduledOpenDate</th>
-	<td>The date the resort is scheduled to open.</td>
-</tr>
-<tr>
-	<th>Temperature</th>
-	<td>Current temperature</td>
-</tr>
-<tr>
-	<th>Winds</th>
-	<td>Wind speed and direction</td>
-</tr>
-<tr>
-	<th>weatherConditions</th>
-	<td>Current weather descriptions</td>
-</tr>
-<tr>
-	<th>Visibility</th>
-	<td>Visibility distance</td>
-</tr>
-<tr>
-	<th>Forecast</th>
-	<td>Weather forecast</td>
-</tr>
-<tr>
-    <th>baseDepth</th>
-    <td>Snow depth at the base</td>
-</tr>
-<tr>
-    <th>newSnow24</th>
-    <td>Depth of new snow fallen in the last 24 hours.</td>
-</tr>
-<tr>
-    <th>newSnow48</th>
-    <td>Depth of new snow fallen in the last 24 hours.</td>
-</tr>
-<tr>
-    <th>stormSnowTotal</th>
-    <td>Total snow fall from the most recent storm.</td>
-</tr>
-<tr>
-    <th>seasonSnowTotal</th>
-    <td>Total snow fall for the season</td>
-</tr>
-</table>
-
-
-<h2>Item Element Additions</h2>
-
-<p> 
-SnowRSS extends the Item tag with new several entities and elements to describe the status of lifts and runs.  
-</p>
-
-
-<h3>Additional Entities of Item</h3>
-
-<table class="entities">
-<tr>
-	<th>snowRSSType</th>
-	<td>Each Item element must specify a snowRSSType entity of "lift" or "run" to define the entity type.  Resort features such as terrain parks should be labeled "run".  </td>
-</tr>
-</table>
-
-<h3>Additional Elements of Item</h3>
-
-<h4>Lifts</h4>
-
-<table class="entities">
-<tr>
-	<th>Title</th>
-	<td>The Title element of a lift Item should be used for the lift name.  </td>
-</tr>
-<tr>
-	<th>Description</th>
-	<td>The Title element of each Item should be a free form text description of the lift status
-</tr>
-<tr>
-	<th>Status</th>
-	<td>Indicate whether the lift is open.  Status must be "open" or "closed".  </td>
-</tr>
-<tr>
-	<th>liftType</th>
-	<td>Describe the list type, tow rope, gondola, etc.  </td>
-</tr>
-</table>
-
-<h4>Runs</h4>
-
-<table class="entities">
-<tr>
-	<th>Title</th>
-	<td>The Title element of a lift Item should be used for the run name.  </td>
-</tr>
-<tr>
-	<th>Description</th>
-	<td>The Title element of each Item should be a free form text description of the run status</td>
-</tr>
-<tr>
-	<th>Status</th>
-	<td>Indicate whether the run is open.  Status must be "open" or "closed".  </td>
-</tr>
-<tr>
-	<th>Conditions</th>
-	<td>Describe the snow conditions on the run, "Powder", "Groomed Snow", "Brush and Rocks", etc. </td>
-</tr>
-<tr>
-	<th>Difficulty</th>
-	<td>Indicates the run's standard difficulty level, and should be on of, "Beginner", "Intermediate", "Advanced" or "Foolhardy". </td>
-</tr>
-</table>
-
-
-
+	<div id="foot">
+	Creative Commons Badge Here
+	</div>
+	
+</div>
     
-
+</body>
+</html>
