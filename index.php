@@ -30,8 +30,8 @@ else {
 
 $feeds = array();
 foreach ($resorts as $resort => $url) {
-	$feeds[$resort] = new SimplePie_SnowRSS($url);  
-	$feeds[$resort]->set_cache_location(sys_get_temp_dir());
+	$feeds[$resort] = new SimplePie_SnowRSS($url, sys_get_temp_dir());  
+#	$feeds[$resort]->set_cache_location(sys_get_temp_dir());
 	$feeds[$resort]->set_item_class('SimplePie_Item_SnowRSS');
 	$feeds[$resort]->init();
 	$feeds[$resort]->handle_content_type();
