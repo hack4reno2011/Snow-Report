@@ -28,13 +28,18 @@ else {
 	$format = 'html';
 }
 
-$feeds = array();
-foreach ($resorts as $resort => $url) {
-	$feeds[$resort] = new SimplePie_SnowRSS($url, sys_get_temp_dir());  
-#	$feeds[$resort]->set_cache_location(sys_get_temp_dir());
-	$feeds[$resort]->set_item_class('SimplePie_Item_SnowRSS');
-	$feeds[$resort]->init();
-	$feeds[$resort]->handle_content_type();
+
+
+$feeds = $resort_names = array();
+foreach ($resorts as $code => $info) {
+	$url = $info['url'];
+	$feeds[$code] = new SimplePie_SnowRSS($url, sys_get_temp_dir());  
+#	$feeds[$code]->set_cache_location(sys_get_temp_dir());
+	$feeds[$code]->set_item_class('SimplePie_Item_SnowRSS');
+	$feeds[$code]->init();
+	$feeds[$code]->handle_content_type();
+	
+	$resort_names[$info['name']] = $code;
 }
 
 
@@ -92,8 +97,8 @@ if ($format == 'voice') {
 $resort = 'mtrose';
 		if ( isset($feeds[$resort])) {
 			$feed =& $feeds[$resort];
-			$conditions = $feed->get_snowrss_resort_name() 
-				. ' is currently ';
+			$resort_name = $feed->get_snowrss_resort_name();
+			$conditions = $resort_name . ' is currently ';
 				
 			if ( strtolower($feed->get_snowrss_status()) == 'open' ) {
 				$conditions .= ' open';
@@ -113,7 +118,7 @@ $resort = 'mtrose';
 				$conditions .= ' unknown';
 			}
 			$tropo->say(
-				"You chose " . $resort . '. ' . $conditions, 
+				"You chose " . $resort_name . '. ' . $conditions, 
 				array("voice" => $tropo_voice)
 			);
 		}
