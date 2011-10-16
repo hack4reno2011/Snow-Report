@@ -2,7 +2,7 @@
 require_once('lib/init.php');
 require_once('lib/template.php');
 require_once('contrib/tropo/tropo.class.php');
-require_once('contrib/simplepie/simplepie.php');
+require_once('contrib/simplepie/simplepie.inc');
 
 if ( $_REQUEST['f'] == 'voice' ) {
 	# tropo
