@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rss version="2.0"
      xmlns="http://backend.userland.com/rss2"
-     xmlns:SnowRSS="http://snoweb.com/SnowRSS">
+     xmlns:SnowRSS="http://snowline.orchestra.io/snowrss.html">
    <channel>
       <title>Mt Rose Ski Tahoe Snow Conditions Report</title>
       <link>http://www.mtrose.com/</link>
