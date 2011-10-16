@@ -131,9 +131,7 @@ class SimplePie_SnowRSS extends SimplePie {
 		$items = $this->get_items();
 		
 		foreach ($items as $item) {
-			# FIXME
-			$type = strtolower($item->data['child'][SIMPLEPIE_NAMESPACE_SNOWRSS]['Type'][0]['data']);
-
+			$type = $item->get_snowrss_type();
 			if ( $type == 'lift') {
 				$lifts[] = $item;
 			}
@@ -147,9 +145,7 @@ class SimplePie_SnowRSS extends SimplePie {
 		$items = $this->get_items();
 		
 		foreach ($items as $item) {
-			# FIXME
-			$type = strtolower($item->data['child'][SIMPLEPIE_NAMESPACE_SNOWRSS]['Type'][0]['data']);
-
+			$type = $item->get_snowrss_type();
 			if ( $type == 'run') {
 				$runs[] = $item;
 			}
