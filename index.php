@@ -11,20 +11,20 @@ if ( isset($_REQUEST['f']) ) {
 		$format = 'voice';
 	}
 	elseif ( $_REQUEST['f'] == 'rss' ) {
-		# tropo
+		# defunct?
 		$format = 'rss';
 	}
 	elseif ( $_REQUEST['f'] == 'html' ) {
-		# tropo
+		# html
 		$format = 'html';
 	}
 	else {
-		# tropo
+		# html
 		$format = 'html';
 	}
 }
 else {
-	# tropo
+	# html
 	$format = 'html';
 }
 
@@ -33,8 +33,7 @@ else {
 $feeds = $resort_names = array();
 foreach ($resorts as $code => $info) {
 	$url = $info['url'];
-	$feeds[$code] = new SimplePie_SnowRSS($url, sys_get_temp_dir());  
-#	$feeds[$code]->set_cache_location(sys_get_temp_dir());
+	$feeds[$code] = new SimplePie_SnowRSS($url, sys_get_temp_dir());
 	$feeds[$code]->set_item_class('SimplePie_Item_SnowRSS');
 	$feeds[$code]->init();
 	$feeds[$code]->handle_content_type();
@@ -103,7 +102,6 @@ if ($format == 'voice') {
 
 		$result = new Result();
 		$choice = $result->getValue();
-#$choice = 'Mount Rose';
 		if ( isset($resort_names[$choice])) {
 			
 			$resort_name = $choice;
@@ -142,7 +140,7 @@ if ($format == 'voice') {
 		$tropo->say("I'm confused now", array("voice" => $tropo_voice));
 	}
  
-    $tropo->RenderJson();
+	$tropo->RenderJson();
 
 	echo("\n");
 	exit;
