@@ -18,7 +18,11 @@
 			margin: 0.5em 0 0.5em 0;
 			border-width: 0 0 1px 0;
 			border-style: solid;
-			border-color: #EEEEEE;
+			border-color: #FFA500;
+		}
+		
+		h4 {
+			border: 0 none;
 		}
 		
 		img {
@@ -57,7 +61,7 @@
 		
 		table.elements, 
 		table.entities {
-			margin: 0 0 0 3em;
+			margin: 0 0 0 2em;
 			border-width: 0;
 		}
 		
@@ -245,8 +249,8 @@
 		
 		<table class="entities">
 		<tr>
-			<th>snowRSSType</th>
-			<td>Each Item element must specify a snowRSSType entity of "lift" or "run" to define the entity type.  Resort features such as terrain parks should be labeled "run".  </td>
+			<th>Type</th>
+			<td>Each Item element must specify a Type entity of "lift" or "run" to define the entity type.  Resort features such as terrain parks should be labeled "run".  </td>
 		</tr>
 		</table>
 		
@@ -255,14 +259,6 @@
 		<h4>Lifts</h4>
 		
 		<table class="entities">
-		<tr>
-			<th>Title</th>
-			<td>The Title element of a lift Item should be used for the lift name.  </td>
-		</tr>
-		<tr>
-			<th>Description</th>
-			<td>The Title element of each Item should be a free form text description of the lift status
-		</tr>
 		<tr>
 			<th>Status</th>
 			<td>Indicate whether the lift is open.  Status must be "open" or "closed".  </td>
@@ -276,14 +272,6 @@
 		<h4>Runs</h4>
 		
 		<table class="entities">
-		<tr>
-			<th>Title</th>
-			<td>The Title element of a lift Item should be used for the run name.  </td>
-		</tr>
-		<tr>
-			<th>Description</th>
-			<td>The Title element of each Item should be a free form text description of the run status</td>
-		</tr>
 		<tr>
 			<th>Status</th>
 			<td>Indicate whether the run is open.  Status must be "open" or "closed".  </td>
