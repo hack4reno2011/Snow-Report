@@ -53,7 +53,7 @@ if ($format == 'html') {
 if ($format == 'voice') {
 	$tropo = new Tropo(); 
 	
-	if ( ! $_REQUEST['uri'] ) {
+	if ( ! $_REQUEST['goto'] ) {
 		// Welcome prompt.
     	$tropo->say('Welcome to Snow Line');
  
@@ -76,21 +76,22 @@ if ($format == 'voice') {
 		# or if there's an error. 
 		$tropo->on(array(
 			"event" => "continue", 
-			"next"  => "index.php?f=voice&uri=choice", 
+			"next"  => "index.php?f=voice&goto=choice", 
 			"say"   => "One moment."
 		));
 		$tropo->on(array(
 			"event" => "error", 
-			"next"  => "index.php?f=voice&uri=incomplete"
+			"next"  => "index.php?f=voice&goto=incomplete"
 		));
      
  	}
-	elseif ( $_REQUEST['uri'] == 'choice' ) {
+	elseif ( $_REQUEST['goto'] == 'choice' ) {
 
-		$result = new Result();
-		$choice = $result->getValue();
+#		$result = new Result();
+#		$choice = $result->getValue();
 $resort = 'mtrose';
 		if ( isset($feeds[$resort])) {
+			$feed =& $feeds[$resort];
 			$conditions = $feed->get_snowrss_resort_name() 
 				. ' is currently ';
 				
@@ -112,7 +113,7 @@ $resort = 'mtrose';
 				$conditions .= ' unknown';
 			}
 			$tropo->say(
-				"You chose " . $choice . $conditions, 
+				"You chose " . $resort . '. ' . $conditions, 
 				array("voice" => $tropo_voice)
 			);
 		}
@@ -121,7 +122,7 @@ $resort = 'mtrose';
 		}
 		
  	}
-	elseif ( $_REQUEST['uri'] == 'error' ) {
+	elseif ( $_REQUEST['goto'] == 'error' ) {
 		$tropo->say("I'm confused now", array("voice" => $tropo_voice));
 	}
  
