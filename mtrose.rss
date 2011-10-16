@@ -11,8 +11,8 @@
       <lastBuildDate>Sat, 15 Oct 2011 04:00:00 GMT</lastBuildDate>
       <webMaster>webmaster@mtrose.com</webMaster>
 
-      <SnowRSS:resortName>Mt Rose Ski Tahoe</title>
-      <SnowRSS:conditionsLink>http://www.mtrose.com/on-the-mountain/snow-report</link>
+      <SnowRSS:resortName>Mt Rose Ski Tahoe</SnowRSS:resortName>
+      <SnowRSS:conditionsLink>http://www.mtrose.com/on-the-mountain/snow-report</SnowRSS:conditionsLink>
       <SnowRSS:Temperature>30F</SnowRSS:Temperature> 	
       <SnowRSS:Winds>10mph</SnowRSS:Winds>
       <SnowRSS:weatherConditions>Clear and Cool</SnowRSS:weatherConditions>
@@ -87,7 +87,7 @@
          <description>Open</description>
          <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
          <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Packed Powder</SnowRSS:>
+         <SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
          <SnowRSS:Difficulty>Beginner</SnowRSS:Difficulty>
       </item>
             
@@ -97,7 +97,7 @@
          <description>Open</description>
          <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
          <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Packed Powder</SnowRSS:>
+         <SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
          <SnowRSS:Difficulty>Intermediate</SnowRSS:Difficulty>
       </item>
             
@@ -107,7 +107,7 @@
          <description>Open</description>
          <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
          <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Packed Powder</SnowRSS:>
+         <SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
          <SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
       </item>
             
@@ -117,7 +117,7 @@
          <description>Open</description>
          <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
          <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Packed Powder</SnowRSS:>
+         <SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
          <SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
       </item>
             
@@ -127,7 +127,7 @@
          <description>Open</description>
          <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
          <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Packed Powder</SnowRSS:>
+         <SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
          <SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
       </item>
             
@@ -137,7 +137,7 @@
          <description>Open</description>
          <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
          <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Packed Powder</SnowRSS:>
+         <SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
          <SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
       </item>
             
@@ -147,7 +147,7 @@
          <description>Open</description>
          <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
          <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Groomed</SnowRSS:>
+         <SnowRSS:Conditions>Groomed</SnowRSS:Conditions>
          <SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
       </item>
       
@@ -157,7 +157,7 @@
          <description>Open</description>
          <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
           <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Groomed</SnowRSS:>
+         <SnowRSS:Conditions>Groomed</SnowRSS:Conditions>
          <SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
      </item>
       
@@ -167,7 +167,7 @@
          <description>Open</description>
          <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
          <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Groomed</SnowRSS:>
+         <SnowRSS:Conditions>Groomed</SnowRSS:Conditions>
          <SnowRSS:Difficulty>Intermediate</SnowRSS:Difficulty>
       </item>
       
