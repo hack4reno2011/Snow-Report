@@ -9,25 +9,21 @@ Welcome to <strong>SnowLine</strong>!  We collect snow conditions from different
 <div class="resort">
 	<h3><?= HtmlSpecialChars($feed->get_snowrss_resort_name()); ?></h3>
 	
+	<div class="status">
 	<? IF ( strtolower($feed->get_snowrss_status()) == 'open' ): ?>
-	<div class="open">
-		OPEN
+		<span class="open">OPEN</span>
 		<? IF ($close_date = $feed->get_snowrss_scheduled_close_date('n/j/Y') ): ?>
 		(closing <?= HtmlSpecialChars($close_date); ?>)
 		<? ENDIF; ?>
-	</div>
 	<? ELSEIF ( strtolower($feed->get_snowrss_status()) == 'closed' ): ?>
-	<div class="closed">
-		Closed
+		<span class="closed">OPEN</span>
 		<? IF ($open_date = $feed->get_snowrss_scheduled_open_date() ): ?>
 		(<?= HtmlSpecialChars($open_date); ?>)
 		<? ENDIF; ?>
-	</div>
 	<? ELSE: ?>
-	<div class="unknown">
-		Unknown
-	</div>
+		<span class="unknown">Unknown</span>
 	<? ENDIF; ?>
+	</div>
 	
 	<div class="link">
 		<a href="resort.php">More</a>

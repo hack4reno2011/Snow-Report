@@ -56,6 +56,19 @@
 			border-style: solid;
 		}
 		
+		.open {
+			color: #00DD33;
+			font-weight: bold;
+		}
+		
+		.closed {
+			color: #990000;
+		}
+		
+		.unknown {
+			color: #FFCC33;
+		}
+		
 		
 	</style>
 </head>
