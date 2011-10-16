@@ -127,7 +127,16 @@
 			Skype Voice: +990009369996149557<br>
 		</div>
 
+		<div>
 		<a href="http://creativecommons.org/licenses/by-sa/1.0/"><img src="art/ccLogo.gif" alt="Creative Commons License"></a>
+		</div>
+
+		<div>
+		Powered by:
+		<a href="http://orchestra.io/">Orchestra</a>, 
+		<a href="http://tropo.com/">Tropo</a>, 
+		<a href="http://simplepie.org/">SimplePie</a>
+		</div>
 	</div>
 	
 </div>
