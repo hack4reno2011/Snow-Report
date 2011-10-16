@@ -25,6 +25,7 @@ else {
 $feeds = array();
 for ( $idx = 0; $idx < count($resorts); $idx++ ) {
 	$feeds[$idx] = new SimplePie_SnowRSS($resorts['mtrose']);  
+	$feeds[$idx]->set_cache_location(sys_get_temp_dir());
 	$feeds[$idx]->set_item_class('SimplePie_Item_SnowRSS');
 	$feeds[$idx]->init();
 	$feeds[$idx]->handle_content_type();
