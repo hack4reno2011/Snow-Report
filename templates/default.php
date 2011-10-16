@@ -120,7 +120,14 @@
 	</div>
 
 	<div id="foot">
-	<a href="http://creativecommons.org/licenses/by-sa/1.0/"><img src="art/ccLogo.gif" alt="Creative Commons License"></a>
+		<div id="batline">
+			<strong>SnowLine is also available by telephone:</strong><br>
+			
+			Voice: (775) 387-0237<br>
+			Skype Voice: +990009369996149557<br>
+		</div>
+
+		<a href="http://creativecommons.org/licenses/by-sa/1.0/"><img src="art/ccLogo.gif" alt="Creative Commons License"></a>
 	</div>
 	
 </div>
