@@ -21,13 +21,24 @@ else {
 	$format = 'html';
 }
 
-if ($type == 'html') {
+$feeds = array();
+for ( $idx = 0; $idx < count($feed); $idx++ ) {
+	$feeds[$idx] = new SimplePie($resorts['mtrose']);  
+	$feeds[$idx]->handle_content_type();
+}
+
+
+if ($format == 'html') {
 	$Body = new Template('templates/home.php');
+	$Body->set('feeds', $feeds);
 	
 	$T = new Template('templates/default.php');
 	$T->set('title', 'SnowLine');
 	$T->set('tagline', 'A SnowRSS Aggregator');
-	$T->set('body', $body);
+	$T->set('body', $Body);
+	
+	echo($T->fetch());
+	exit;
 }
 
 ?>

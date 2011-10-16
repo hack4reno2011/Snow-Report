@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>SnowRSS Documentation</title>
+	<title>SnowLine</title>
 	<style type="text/css">
 		
 		body {
@@ -16,9 +16,6 @@
 		
 		h2, h3, h4 {
 			margin: 0.5em 0 0.5em 0;
-			border-width: 0 0 1px 0;
-			border-style: solid;
-			border-color: #FFA500;
 		}
 		
 		h4 {
@@ -83,7 +80,7 @@
 	</div>
 
 	<div id="foot">
-	<a href="http://creativecommons.org/licenses/by-sa/1.0/"><img src="art/ccLogo.gif" alt="Creative Commons License></a>
+	<a href="http://creativecommons.org/licenses/by-sa/1.0/"><img src="art/ccLogo.gif" alt="Creative Commons License"></a>
 	</div>
 	
 </div>
