@@ -88,11 +88,19 @@
 
 <? $items = $feed->get_runs(); ?>
 <? IF ( count($items) > 0 ): ?>
-<tr class="odd">
+<tr class="even">
 	<th>Runs</th>
 	<td>
 	<? FOREACH ($items as $item): ?>
-		<div>
+		<? IF ( $item->get_snowrss_status() == "Open"): ?>
+		<div class="open">
+		<? ELSE: ?>
+		<div class="closed">
+		<? ENDIF; ?>
+		
+		<? IF ($diff = $item->get_snowrss_difficulty()): ?>
+		<img src="art/<?= strtolower($diff); ?>.png" width="16" height="16">
+		<? ENDIF; ?>
 		<?= HtmlSpecialChars($item->get_description()); ?>
 		</div>
 	<? ENDFOREACH; ?>
@@ -102,6 +110,5 @@
 
 
 </table>
-
 
 

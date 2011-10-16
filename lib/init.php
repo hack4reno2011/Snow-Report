@@ -18,6 +18,7 @@ $resorts = array(
 	)
 );
 
+
 $tropo_voice = "Kate";
 
 

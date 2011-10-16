@@ -163,6 +163,26 @@ class SimplePie_Item_SnowRSS extends SimplePie_Item {
 		return $data[0]['data'];
 	}
 
+	function get_snowrss_status () {
+		$data = $this->get_item_tags(SIMPLEPIE_NAMESPACE_SNOWRSS, 'Status');
+		return $data[0]['data'];
+	}
+
+	function get_snowrss_lift_type () {
+		$data = $this->get_item_tags(SIMPLEPIE_NAMESPACE_SNOWRSS, 'liftType');
+		return $data[0]['data'];
+	}
+
+	function get_snowrss_conditions () {
+		$data = $this->get_item_tags(SIMPLEPIE_NAMESPACE_SNOWRSS, 'Conditions');
+		return $data[0]['data'];
+	}
+
+	function get_snowrss_difficulty () {
+		$data = $this->get_item_tags(SIMPLEPIE_NAMESPACE_SNOWRSS, 'Difficulty');
+		return $data[0]['data'];
+	}
+
 
 }
  
