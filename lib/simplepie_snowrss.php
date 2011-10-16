@@ -125,6 +125,38 @@ class SimplePie_SnowRSS extends SimplePie {
 		$data = $this->get_channel_tags(SIMPLEPIE_NAMESPACE_SNOWRSS, 'seasonSnowTotal');
 		return $data[0]['data'];
 	}
+	
+	function get_lifts () {
+		$lifts = array();
+		$items = $this->get_items();
+		
+		foreach ($items as $item) {
+			# FIXME
+			$type = strtolower($item->data['child'][SIMPLEPIE_NAMESPACE_SNOWRSS]['Type'][0]['data']);
+
+			if ( $type == 'lift') {
+				$lifts[] = $item;
+			}
+		}
+		
+		return $lifts;
+	}
+
+	function get_runs () {
+		$runs = array();
+		$items = $this->get_items();
+		
+		foreach ($items as $item) {
+			# FIXME
+			$type = strtolower($item->data['child'][SIMPLEPIE_NAMESPACE_SNOWRSS]['Type'][0]['data']);
+
+			if ( $type == 'run') {
+				$runs[] = $item;
+			}
+		}
+		
+		return $runs;
+	}
 
 }
 

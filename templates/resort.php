@@ -1,12 +1,13 @@
+
 <h2><?= HtmlSpecialChars($feed->get_snowrss_resort_name()); ?></h2>
 
 <table class="resorts">
-<tr>
+<tr class="odd">
 	<th>Conditions Link</th>
 	<td><a href="<?= HtmlSpecialChars($feed->get_snowrss_conditions_link()); ?>"><?= HtmlSpecialChars($feed->get_snowrss_conditions_link()); ?></a></td>
 </tr>
 
-<tr>
+<tr class="even">
 	<th>Status</th>
 	<td><?= HtmlSpecialChars($feed->get_snowrss_status()); ?></td>
 </tr>
@@ -16,7 +17,7 @@
 	<td><?= HtmlSpecialChars($feed->get_snowrss_scheduled_open_date('n/j/Y')); ?></td>
 </tr>
 
-<tr>
+<tr class="even">
 	<th>Scheduled Close Date</th>
 	<td><?= HtmlSpecialChars($feed->get_snowrss_scheduled_close_date('n/j/Y')); ?></td>
 </tr>
@@ -26,7 +27,7 @@
 	<td><?= HtmlSpecialChars($feed->get_snowrss_temperature()); ?></td>
 </tr>
 
-<tr>
+<tr class="even">
 	<th>Winds</th>
 	<td><?= HtmlSpecialChars($feed->get_snowrss_winds()); ?></td>
 </tr>
@@ -36,7 +37,7 @@
 	<td><?= HtmlSpecialChars($feed->get_snowrss_weather_conditions()); ?></td>
 </tr>
 
-<tr>
+<tr class="even">
 	<th>Visibility</th>
 	<td><?= HtmlSpecialChars($feed->get_snowrss_visibility()); ?></td>
 </tr>
@@ -46,7 +47,7 @@
 	<td><?= HtmlSpecialChars($feed->get_snowrss_forecast()); ?></td>
 </tr>
 
-<tr>
+<tr class="even">
 	<th>Base Depth</th>
 	<td><?= HtmlSpecialChars($feed->get_snowrss_base_depth()); ?></td>
 </tr>
@@ -56,7 +57,7 @@
 	<td><?= HtmlSpecialChars($feed->get_snowrss_new_snow_24()); ?></td>
 </tr>
 
-<tr>
+<tr class="even">
 	<th>New Snow (last 48 hours)</th>
 	<td><?= HtmlSpecialChars($feed->get_snowrss_new_snow_48()); ?></td>
 </tr>
@@ -66,10 +67,38 @@
 	<td><?= HtmlSpecialChars($feed->get_snowrss_storm_snow_total()); ?></td>
 </tr>
 
-<tr>
+<tr class="even">
 	<th>Season Snow Total</th>
 	<td><?= HtmlSpecialChars($feed->get_snowrss_season_snow_total()); ?></td>
 </tr>
+
+<? $items = $feed->get_lifts(); ?>
+<? IF ( count($items) > 0 ): ?>
+<tr class="odd">
+	<th>Lifts</th>
+	<td>
+	<? FOREACH ($items as $item): ?>
+		<div>
+		<?= HtmlSpecialChars($item->get_description()); ?>
+		</div>
+	<? ENDFOREACH; ?>
+</td></tr>
+
+<? ENDIF; ?>
+
+<? $items = $feed->get_runs(); ?>
+<? IF ( count($items) > 0 ): ?>
+<tr class="odd">
+	<th>Runs</th>
+	<td>
+	<? FOREACH ($items as $item): ?>
+		<div>
+		<?= HtmlSpecialChars($item->get_description()); ?>
+		</div>
+	<? ENDFOREACH; ?>
+</td></tr>
+
+<? ENDIF; ?>
 
 
 </table>
