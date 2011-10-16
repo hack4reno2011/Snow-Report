@@ -3,6 +3,7 @@ require_once('lib/init.php');
 require_once('lib/template.php');
 require_once('contrib/tropo/tropo.class.php');
 require_once('contrib/simplepie/simplepie.inc');
+require_once('lib/simplepie_snowrss.php');
 
 if ( $_REQUEST['f'] == 'voice' ) {
 	# tropo
@@ -22,8 +23,10 @@ else {
 }
 
 $feeds = array();
-for ( $idx = 0; $idx < count($feed); $idx++ ) {
-	$feeds[$idx] = new SimplePie($resorts['mtrose']);  
+for ( $idx = 0; $idx < count($resorts); $idx++ ) {
+	$feeds[$idx] = new SimplePie_SnowRSS($resorts['mtrose']);  
+	$feeds[$idx]->set_item_class('SimplePie_Item_SnowRSS');
+	$feeds[$idx]->init();
 	$feeds[$idx]->handle_content_type();
 }
 

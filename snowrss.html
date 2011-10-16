@@ -59,14 +59,12 @@
 			border-style: solid;
 		}
 		
-		table.elements, 
-		table.entities {
+		table.elements {
 			margin: 0 0 0 2em;
 			border-width: 0;
 		}
 		
-			table.elements thead th, 
-			table.entities thead th {
+			table.elements thead th {
 				border-color: #666666;
 				border-style: solid;
 				border-width: 0 0 1px 0;
@@ -74,17 +72,14 @@
 				text-align: left;
 			}
 			
-			table.elements tbody th, 
-			table.entities tbody th {
+			table.elements tbody th {
 				vertical-align: top;
 				text-align: left;
 				color: #003366;
 			}
 		
 			table.elements th, 
-			table.elements td, 
-			table.entities th, 
-			table.entities td {
+			table.elements td {
 				padding: 4px;
 			}
 			
@@ -114,7 +109,7 @@
 
 	
 		<p>
-		SnowRSS is an <a href="http://www.disobey.com/detergent/2002/extendingrss2/">extension</a> to <a href="http://cyber.law.harvard.edu/rss/rss.html#hrelementsOfLtitemgt">RSS v2</a> that defines new elements and entities to describe snow, lift and weather conditions for ski resorts.  
+		SnowRSS is an <a href="http://www.disobey.com/detergent/2002/extendingrss2/">extension</a> to <a href="http://cyber.law.harvard.edu/rss/rss.html#hrelementsOfLtitemgt">RSS v2</a> that defines new elements to describe snow, lift and weather conditions for ski resorts.  
 		</p>
 				
 		<p>
@@ -241,49 +236,84 @@
 		<h2>Item Element Additions</h2>
 		
 		<p> 
-		SnowRSS extends the Item tag with new several entities and elements to describe the status of lifts and runs.  
+		SnowRSS extends the Item tag with new several elements to describe the status of lifts and runs.  
 		</p>
 		
-		
-		<h3>Additional Entities of Item</h3>
-		
-		<table class="entities">
-		<tr>
-			<th>Type</th>
-			<td>Each Item element must specify a Type entity of "lift" or "run" to define the entity type.  Resort features such as terrain parks should be labeled "run".  </td>
-		</tr>
-		</table>
 		
 		<h3>Additional Elements of Item</h3>
 		
 		<h4>Lifts</h4>
 		
-		<table class="entities">
+		<table class="elements">
+		<thead>
+		<tr>
+			<th>Element</th>
+			<th>Required</th>
+			<th>Description</th>
+			<th>Example</th>
+		</tr>
+		</thead>
+		
+		<tbody>
+		<tr>
+			<th>Type</th>
+			<td></td>
+			<td>Each lift Item element must specify a Type entity of "lift" to define the entity type.</td>
+			<td></td>
+		</tr>
 		<tr>
 			<th>Status</th>
+			<td></td>
 			<td>Indicate whether the lift is open.  Status must be "open" or "closed".  </td>
+			<td></td>
 		</tr>
 		<tr>
 			<th>liftType</th>
+			<td></td>
 			<td>Describe the list type, tow rope, gondola, etc.  </td>
+			<td></td>
 		</tr>
+		</tbody>
 		</table>
 		
 		<h4>Runs</h4>
 		
-		<table class="entities">
+		<table class="elements">
+		<thead>
+		<tr>
+			<th>Element</th>
+			<th>Required</th>
+			<th>Description</th>
+			<th>Example</th>
+		</tr>
+		</thead>
+		
+		<tbody>
+		<tr>
+			<th>Type</th>
+			<td></td>
+			<td>Each run Item element must specify a Type entity "run" to define the entity type.  Resort features such as terrain parks should be labeled "run" as well.  </td>
+			<td></td>
+		</tr>
 		<tr>
 			<th>Status</th>
+			<td></td>
 			<td>Indicate whether the run is open.  Status must be "open" or "closed".  </td>
+			<td></td>
 		</tr>
 		<tr>
 			<th>Conditions</th>
+			<td></td>
 			<td>Describe the snow conditions on the run, "Powder", "Groomed Snow", "Brush and Rocks", etc. </td>
+			<td></td>
 		</tr>
 		<tr>
 			<th>Difficulty</th>
+			<td></td>
 			<td>Indicates the run's standard difficulty level, and should be on of, "Beginner", "Intermediate", "Advanced" or "Foolhardy". </td>
+			<td></td>
 		</tr>
+		</tbody>
 		</table>
 		
 		

@@ -1,175 +1,206 @@
-<?xml version="1.0"?>
 <rss version="2.0"
-     xmlns="http://backend.userland.com/rss2"
-     xmlns:SnowRSS="http://snowline.orchestra.io/snowrss.html">
-   <channel>
-      <title>Mt Rose Ski Tahoe Snow Conditions Report</title>
-      <link>http://www.mtrose.com/</link>
-      <description>Mt. Rose is Tahoe’s closest skiing to Reno, located 25 minutes away from Reno and 15 minutes from Lake Tahoe. Mt. Rose boasts over 1200 acres of terrain, including the 200+ acre Chutes, and the new Winters Creek Lodge. The Mt. Rose season pass sale ends October 30th! Buy an Unlimited season pass for only $377 and ski whenever you want. For current weather conditions or information regarding this release, please visit www.skirose.com or call (775) 849-0704.</description>
-      <language>en-us</language>
-      <pubDate>Sat, 15 Oct 2011 04:00:00 GMT</pubDate>
-      <lastBuildDate>Sat, 15 Oct 2011 04:00:00 GMT</lastBuildDate>
-      <webMaster>webmaster@mtrose.com</webMaster>
-
-      <SnowRSS:resortName>Mt Rose Ski Tahoe</SnowRSS:resortName>
-      <SnowRSS:conditionsLink>http://www.mtrose.com/on-the-mountain/snow-report</SnowRSS:conditionsLink>
-      <SnowRSS:Temperature>30F</SnowRSS:Temperature> 	
-      <SnowRSS:Winds>10mph</SnowRSS:Winds>
-      <SnowRSS:weatherConditions>Clear and Cool</SnowRSS:weatherConditions>
-      <SnowRSS:Visibility>Unlimited</SnowRSS:Visibility>
-      <SnowRSS:Forecast>Some clouds in the morning will give way to mainly sunny skies for the afternoon. High 38F. Winds WSW at 10 to 20 mph.</SnowRSS:Forecast>
-      <SnowRSS:baseDepth>72"</SnowRSS:baseDepth>
-      <SnowRSS:newSnow24>0</SnowRSS:newSnow24>
-      <SnowRSS:newSnow48>6"</SnowRSS:newSnow48>
-      <SnowRSS:stormSnowTotal>8"</SnowRSS:stormSnowTotal>
-      <SnowRSS:seasonSnowTotal>112"</SnowRSS:seasonSnowTotal>
-      
-      <item SnowRSS:Type="lift">
-         <title>Northwest Magnum 6</title>
-         <link>http://www.mtrose.com/on-the-mountain/snow-report#magnum6</link>
-         <description>Open</description>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <pubDate>Sat, 15 Oct 2011 04:00:00 GMT</pubDate>
-         <guid>http://www.mtrose.com/on-the-mountain/snow-report#magnum6</guid>
-      </item>
-      
-      <item SnowRSS:Type="lift">
-         <title>Blazing Zephyr 6</title>
-         <link>http://www.mtrose.com/on-the-mountain/snow-report#zephyr6</link>
-         <description>Open</description>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-			<pubDate>Sat, 15 Oct 2011 04:01:00 GMT</pubDate>
-      </item>
-      
-      <item SnowRSS:Type="lift">
-         <title>Chutter</title>
-         <link>http://www.mtrose.com/on-the-mountain/snow-report#chutter</link>
-         <description>Open</description>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <pubDate>Sat, 15 Oct 2011 04:04:00 GMT</pubDate>
-      </item>
-      
-      <item SnowRSS:Type="lift">
-         <title>Lakeview</title>
-         <link>http://www.mtrose.com/on-the-mountain/snow-report#lakeview</link>
-         <description>Open</description>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <pubDate>Sat, 15 Oct 2011 04:06:00 GMT</pubDate>
-      </item>
-      
-      <item SnowRSS:Type="lift">
-         <title>Galena</title>
-         <link>http://www.mtrose.com/on-the-mountain/snow-report#galena</link>
-         <description>Open</description>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <pubDate>Sat, 15 Oct 2011 04:08:00 GMT</pubDate>
-      </item>
-      
-      <item SnowRSS:Type="lift">
-         <title>Ponderosa</title>
-         <link>http://www.mtrose.com/on-the-mountain/snow-report#ponerosa</link>
-         <description>Closed</description>
-         <SnowRSS:Status>Closed</SnowRSS:Status>
-         <pubDate>Sat, 15 Oct 2011 04:08:00 GMT</pubDate>
-      </item>
-      
-      <item SnowRSS:Type="lift">
-         <title>Flying Jenny</title>
-         <link>http://www.mtrose.com/on-the-mountain/snow-report#flyingjenny</link>
-         <description>Open</description>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
-      </item>
-      
-      <item SnowRSS:Type="run">
-         <title>Kit Carson</title>
-         <link>http://www.mtrose.com/on-the-mountain/terrain-parks#kitcarson</link>
-         <description>Open</description>
-         <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
-         <SnowRSS:Difficulty>Beginner</SnowRSS:Difficulty>
-      </item>
-            
-      <item SnowRSS:Type="run">
-         <title>Around the World</title>
-         <link>http://www.mtrose.com/on-the-mountain/terrain-parks#aroundtheworld</link>
-         <description>Open</description>
-         <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
-         <SnowRSS:Difficulty>Intermediate</SnowRSS:Difficulty>
-      </item>
-            
-      <item SnowRSS:Type="run">
-         <title>El Cap</title>
-         <link>http://www.mtrose.com/on-the-mountain/terrain-parks#elcap</link>
-         <description>Open</description>
-         <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
-         <SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
-      </item>
-            
-      <item SnowRSS:Type="run">
-         <title>Jackpot</title>
-         <link>http://www.mtrose.com/on-the-mountain/terrain-parks#jackpot</link>
-         <description>Open</description>
-         <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
-         <SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
-      </item>
-            
-      <item SnowRSS:Type="run">
-         <title>Cutthroat</title>
-         <link>http://www.mtrose.com/on-the-mountain/terrain-parks#cutthroat</link>
-         <description>Open</description>
-         <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
-         <SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
-      </item>
-            
-      <item SnowRSS:Type="run">
-         <title>Low Ball</title>
-         <link>http://www.mtrose.com/on-the-mountain/terrain-parks#lowball</link>
-         <description>Open</description>
-         <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
-         <SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
-      </item>
-            
-      <item SnowRSS:Type="run">
-         <title>Double Down Terrain Park</title>
-         <link>http://www.mtrose.com/on-the-mountain/terrain-parks#doubledown</link>
-         <description>Open</description>
-         <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Groomed</SnowRSS:Conditions>
-         <SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
-      </item>
-      
-      <item SnowRSS:Type="run">
-         <title>Badlands Terrain Park</title>
-         <link>http://www.mtrose.com/on-the-mountain/terrain-parks#badlands</link>
-         <description>Open</description>
-         <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
-          <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Groomed</SnowRSS:Conditions>
-         <SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
-     </item>
-      
-      <item SnowRSS:Type="run">
-         <title>Blackjack Progression Park</title>
-         <link>http://www.mtrose.com/on-the-mountain/terrain-parks#blackjack</link>
-         <description>Open</description>
-         <pubDate>Sat, 15 Oct 2011 04:012:00 GMT</pubDate>
-         <SnowRSS:Status>Open</SnowRSS:Status>
-         <SnowRSS:Conditions>Groomed</SnowRSS:Conditions>
-         <SnowRSS:Difficulty>Intermediate</SnowRSS:Difficulty>
-      </item>
-      
-   </channel>
+	xmlns:SnowRSS="http://snowline.orchestra.io/snowrss.html">
+	<channel>
+		<title>Mt Rose Ski Tahoe Snow Conditions Report</title>
+		<link>http://www.mtrose.com/</link>
+		<description>Mt. Rose is Tahoe’s closest skiing to Reno, located 25 minutes away from Reno and 15 minutes from Lake Tahoe. Mt. Rose boasts over 1200 acres of terrain, including the 200+ acre Chutes, and the new Winters Creek Lodge. The Mt. Rose season pass sale ends October 30th! Buy an Unlimited season pass for only $377 and ski whenever you want. For current weather conditions or information regarding this release, please visit www.skirose.com or call (775) 849-0704.</description>
+		<language>en-us</language>
+		<pubDate>Sat, 15 Oct 2011 04:00:00 GMT</pubDate>
+		<lastBuildDate>Sat, 15 Oct 2011 04:00:00 GMT</lastBuildDate>
+		<webMaster>webmaster@mtrose.com</webMaster>
+		
+		<SnowRSS:resortName>Mt Rose Ski Tahoe</SnowRSS:resortName>
+		<SnowRSS:conditionsLink>http://www.mtrose.com/on-the-mountain/snow-report</SnowRSS:conditionsLink>
+		<SnowRSS:Status>Open</SnowRSS:Status>
+		<SnowRSS:scheduledCloseDate>4 Jul 2012 18:00:00 GMT</SnowRSS:scheduledCloseDate>
+		<SnowRSS:Temperature>30F</SnowRSS:Temperature> 	
+		<SnowRSS:Winds>10mph</SnowRSS:Winds>
+		<SnowRSS:weatherConditions>Clear and Cool</SnowRSS:weatherConditions>
+		<SnowRSS:Visibility>Unlimited</SnowRSS:Visibility>
+		<SnowRSS:Forecast>Some clouds in the morning will give way to mainly sunny skies for the afternoon. High 38F. Winds WSW at 10 to 20 mph.</SnowRSS:Forecast>
+		<SnowRSS:baseDepth>72"</SnowRSS:baseDepth>
+		<SnowRSS:newSnow24>0</SnowRSS:newSnow24>
+		<SnowRSS:newSnow48>6"</SnowRSS:newSnow48>
+		<SnowRSS:stormSnowTotal>8"</SnowRSS:stormSnowTotal>
+		<SnowRSS:seasonSnowTotal>112"</SnowRSS:seasonSnowTotal>
+		
+		<item>
+			<title>Northwest Magnum 6</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#magnum6</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#magnum6</guid>
+			<description>The Northwest Magnum 6 list is Open</description>
+			<pubDate>15 Oct 2011 04:00:00 GMT</pubDate>
+			<SnowRSS:Type>lift</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+		</item>
+		  
+		<item>
+			<title>Blazing Zephyr 6</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#zephyr6</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#zephyr6</guid>
+			<description>The Blazing Zephyr 6 is Open</description>
+			<pubDate>15 Oct 2011 04:01:00 GMT</pubDate>
+			<SnowRSS:Type>lift</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+		</item>
+		  
+		<item>
+			<title>Chutter</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#chutter</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#chutter</guid>
+			<description>The Chutter lift is Open</description>
+			<pubDate>15 Oct 2011 04:04:00 GMT</pubDate>
+			<SnowRSS:Type>lift</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+		</item>
+		  
+		<item>
+			<title>Lakeview</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#lakeview</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#lakeview</guid>
+			<description>The Lakeview lift is Open</description>
+			<pubDate>15 Oct 2011 04:06:00 GMT</pubDate>
+			<SnowRSS:Type>lift</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+		</item>
+		  
+		<item>
+			<title>Galena</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#galena</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#galena</guid>
+			<description>The Galena lift is Open</description>
+			<pubDate>15 Oct 2011 04:08:00 GMT</pubDate>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Type>lift</SnowRSS:Type>
+		</item>
+		  
+		<item>
+			<title>Ponderosa</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#ponerosa</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#ponerosa</guid>
+			<description>The Ponderosa lift is Closed</description>
+			<pubDate>Sat, 15 Oct 2011 04:08:00 GMT</pubDate>
+			<SnowRSS:Type>lift</SnowRSS:Type>
+			<SnowRSS:Status>Closed</SnowRSS:Status>
+		</item>
+		  
+		<item>
+			<title>Flying Jenny</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#flyingjenny</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#flyingjenny</guid>
+			<description>The Flying Jenny lift is Open</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>lift</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+		</item>
+		  
+		<item>
+			<title>Kit Carson</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#kitcarson</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#kitcarson</guid>
+			<description>The Kit Carson run is Open with packed powder</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Beginner</SnowRSS:Difficulty>
+		</item>
+				
+		<item>
+			<title>Around the World</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#aroundtheworld</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#aroundtheworld</guid>
+			<description>The Around the World run is Open with Packed Powder</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Intermediate</SnowRSS:Difficulty>
+		</item>
+			   
+		<item>
+			<title>El Cap</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#elcap</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#elcap</guid>
+			<description>The El Cap run is Open with groomed snow</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Groomed Snow</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
+		</item>
+			   
+		<item>
+			<title>Jackpot</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#jackpot</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#jackpot</guid>
+			<description>The Jackpot run is open with moguls</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Moguls</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
+		</item>
+			   
+		<item>
+			<title>Cutthroat</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#cutthroat</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#cutthroat</guid>
+			<description>The Cutthroat run is open with packed powder</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Packed Powder</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
+		</item>
+			   
+		<item>
+			<title>Low Ball</title>
+			<link>http://www.mtrose.com/on-the-mountain/snow-report#lowball</link>
+			<guid>http://www.mtrose.com/on-the-mountain/snow-report#lowball</guid>
+			<description>The Lowball run is open with groomed snow</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Groomed Snow</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
+		</item>
+			   
+		<item>
+			<title>Double Down Terrain Park</title>
+			<link>http://www.mtrose.com/on-the-mountain/terrain-parks#doubledown</link>
+			<guid>http://www.mtrose.com/on-the-mountain/terrain-parks#doubledown</guid>
+			<description>The Double Down Terrain Park is open with groomed snow</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Groomed</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
+		</item>
+		  
+		<item>
+			<title>Badlands Terrain Park</title>
+			<link>http://www.mtrose.com/on-the-mountain/terrain-parks#badlands</link>
+			<guid>http://www.mtrose.com/on-the-mountain/terrain-parks#badlands</guid>
+			<description>The Badlands Terrain Park is open with groomed snow</description>
+			<pubDate>Sat, 15 Oct 2011 04:24:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Groomed</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
+		</item>
+		  
+		<item>
+			<title>Blackjack Progression Park</title>
+			<link>http://www.mtrose.com/on-the-mountain/terrain-parks#blackjack</link>
+			<guid>http://www.mtrose.com/on-the-mountain/terrain-parks#blackjack</guid>
+			<description>The Blackjack Progression Park is open with groomed snow</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Groomed</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Intermediate</SnowRSS:Difficulty>
+		</item>
+		  
+	</channel>
 </rss>
