@@ -20,7 +20,7 @@ class Template {
      * Set a template variable.
      */
     function set($name, $value) {
-        $this->vars[$name] = is_object($value) ? $value->fetch() : $value;
+        $this->vars[$name] = is_object($value) && method_exists($value, 'fetch') ? $value->fetch() : $value;
     }
 
     /**
