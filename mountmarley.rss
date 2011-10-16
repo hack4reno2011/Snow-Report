@@ -1,0 +1,107 @@
+<rss version="2.0"
+	xmlns:SnowRSS="http://snowline.orchestra.io/snowrss.html">
+	<channel>
+		<title>Mount Marley Snow Conditions</title>
+		<link>http://www.example.com/</link>
+		<description>Mount Marley is a made up resort, for testing</description>
+		<language>en-us</language>
+		<pubDate>Sat, 15 Oct 2011 04:00:00 GMT</pubDate>
+		<lastBuildDate>Sat, 15 Oct 2011 04:00:00 GMT</lastBuildDate>
+		<webMaster>webmaster@example.com</webMaster>
+		
+		<SnowRSS:resortName>Mount Marley</SnowRSS:resortName>
+		<SnowRSS:conditionsLink>http://www.example.com/conditions</SnowRSS:conditionsLink>
+		<SnowRSS:Status>Open</SnowRSS:Status>
+		<SnowRSS:Temperature>22F</SnowRSS:Temperature> 	
+		<SnowRSS:Winds>10mph</SnowRSS:Winds>
+		<SnowRSS:weatherConditions>Clear and Cold</SnowRSS:weatherConditions>
+		<SnowRSS:Visibility>Unlimited</SnowRSS:Visibility>
+		<SnowRSS:Forecast>Some clouds in the morning will give way to mainly sunny skies for the afternoon. High 38F. Winds WSW at 10 to 20 mph.</SnowRSS:Forecast>
+		<SnowRSS:baseDepth>80"</SnowRSS:baseDepth>
+		<SnowRSS:newSnow24>12</SnowRSS:newSnow24>
+		<SnowRSS:newSnow48>18"</SnowRSS:newSnow48>
+		<SnowRSS:stormSnowTotal>18"</SnowRSS:stormSnowTotal>
+		<SnowRSS:seasonSnowTotal>99"</SnowRSS:seasonSnowTotal>
+		
+		<item>
+			<title>Small Axe</title>
+			<link>http://www.example.com/conditions#smallaxe</link>
+			<guid>http://www.example.com/conditions#smallaxe</guid>
+			<description>Small Axe is Open</description>
+			<pubDate>15 Oct 2011 04:00:00 GMT</pubDate>
+			<SnowRSS:Type>lift</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+		</item>
+		  
+		<item>
+			<title>Mellow Mood</title>
+			<link>http://www.example.com/conditions#mellow</link>
+			<guid>http://www.example.com/conditions#mellow</guid>
+			<description>The Mellow Mood lift is open</description>
+			<pubDate>15 Oct 2011 04:01:00 GMT</pubDate>
+			<SnowRSS:Type>lift</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+		</item>
+		  
+		<item>
+			<title>Stir It Up</title>
+			<link>http://www.example.com/conditions#stiritup</link>
+			<guid>http://www.example.com/conditions#stiritup</guid>
+			<description>The Stir It Up Run is Open with Moguls</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Moguls</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
+		</item>
+				
+		<item>
+			<title>Roadblock</title>
+			<link>http://www.example.com/conditions#aroundtheworld</link>
+			<guid>http://www.example.com/conditions#aroundtheworld</guid>
+			<description>The Roadblock Terrain Park is Open with Groomed Snow</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Groomed</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Intermediate</SnowRSS:Difficulty>
+		</item>
+			   
+		<item>
+			<title>Trenchtown</title>
+			<link>http://www.example.com/conditions#trenchtown</link>
+			<guid>http://www.example.com/conditions#trenchtown</guid>
+			<description>The Trenchtown is Closed</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Closed</SnowRSS:Status>
+			<SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
+		</item>
+			   
+		<item>
+			<title>Exodus</title>
+			<link>http://www.example.com/conditions#exodus</link>
+			<guid>http://www.example.com/conditions#exodus</guid>
+			<description>The Exodus run is open with groomed snow</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Groomed</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
+		</item>
+			   
+		  
+		<item>
+			<title>Hammer</title>
+			<link>http://www.example.com/conditions#hammer</link>
+			<guid>http://www.example.com/conditions#hammer</guid>
+			<description>The Hammer run is open with powder</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Open</SnowRSS:Status>
+			<SnowRSS:Conditions>Powder</SnowRSS:Conditions>
+			<SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
+		</item>
+			   
+	</channel>
+</rss>

@@ -1,0 +1,82 @@
+<rss version="2.0"
+	xmlns:SnowRSS="http://snowline.orchestra.io/snowrss.html">
+	<channel>
+		<title>Blueberry Hill Conditions</title>
+		<link>http://www.example.com/</link>
+		<description>Blueberry Hill is a made up resort, and also a Fats Domino song</description>
+		<language>en-us</language>
+		<pubDate>Sat, 15 Oct 2011 04:00:00 GMT</pubDate>
+		<lastBuildDate>Sat, 15 Oct 2011 04:00:00 GMT</lastBuildDate>
+		<webMaster>webmaster@example.com</webMaster>
+		
+		<SnowRSS:resortName>Blueberry Hill</SnowRSS:resortName>
+		<SnowRSS:conditionsLink>http://www.example.com/conditions</SnowRSS:conditionsLink>
+		<SnowRSS:Status>Closed</SnowRSS:Status>
+		<SnowRSS:scheduledOpenDate>1 Feb 2012 8:00:00 GMT</SnowRSS:scheduledOpenDate>
+		<SnowRSS:Temperature>44F</SnowRSS:Temperature> 	
+		<SnowRSS:Winds>10mph</SnowRSS:Winds>
+		<SnowRSS:weatherConditions>Clear and Warm</SnowRSS:weatherConditions>
+		<SnowRSS:Visibility>Unlimited</SnowRSS:Visibility>
+		<SnowRSS:Forecast>Some clouds in the morning will give way to mainly sunny skies for the afternoon. High 38F. Winds WSW at 10 to 20 mph.</SnowRSS:Forecast>
+		<SnowRSS:baseDepth>8"</SnowRSS:baseDepth>
+		<SnowRSS:newSnow24>0</SnowRSS:newSnow24>
+		<SnowRSS:newSnow48>0"</SnowRSS:newSnow48>
+		<SnowRSS:stormSnowTotal>8"</SnowRSS:stormSnowTotal>
+		<SnowRSS:seasonSnowTotal>8"</SnowRSS:seasonSnowTotal>
+		
+		<item>
+			<title>The Thrill</title>
+			<link>http://www.example.com/conditions#thrill</link>
+			<guid>http://www.example.com/conditions#thrill</guid>
+			<description>The Thrill is Closed</description>
+			<pubDate>15 Oct 2011 04:00:00 GMT</pubDate>
+			<SnowRSS:Type>lift</SnowRSS:Type>
+			<SnowRSS:Status>Closed</SnowRSS:Status>
+		</item>
+		  
+		<item>
+			<title>Fats Tow Rope</title>
+			<link>http://www.example.com/conditions#fats</link>
+			<guid>http://www.example.com/conditions#fats</guid>
+			<description>The Fats Tow Rope is Closed</description>
+			<pubDate>15 Oct 2011 04:01:00 GMT</pubDate>
+			<SnowRSS:Type>lift</SnowRSS:Type>
+			<SnowRSS:Status>Closed</SnowRSS:Status>
+		</item>
+		  
+		<item>
+			<title>Domino</title>
+			<link>http://www.example.com/conditions#domino</link>
+			<guid>http://www.example.com/conditions#domino</guid>
+			<description>The Domino run is closed</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Closed</SnowRSS:Status>
+			<SnowRSS:Difficulty>Beginner</SnowRSS:Difficulty>
+		</item>
+				
+		<item>
+			<title>Satchmo</title>
+			<link>http://www.example.com/conditions#aroundtheworld</link>
+			<guid>http://www.example.com/conditions#aroundtheworld</guid>
+			<description>The Satchmo run is Closed</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Closed</SnowRSS:Status>
+			<SnowRSS:Difficulty>Intermediate</SnowRSS:Difficulty>
+		</item>
+			   
+		<item>
+			<title>Lady Day</title>
+			<link>http://www.example.com/conditions#elcap</link>
+			<guid>http://www.example.com/conditions#elcap</guid>
+			<description>The Lady Day run is closed</description>
+			<pubDate>Sat, 15 Oct 2011 04:12:00 GMT</pubDate>
+			<SnowRSS:Type>run</SnowRSS:Type>
+			<SnowRSS:Status>Closed</SnowRSS:Status>
+			<SnowRSS:Difficulty>Advanced</SnowRSS:Difficulty>
+		</item>
+			   
+		  
+	</channel>
+</rss>
