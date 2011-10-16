@@ -1,7 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<title>SnowLine</title>
 	<style type="text/css">
 		
@@ -11,7 +12,7 @@
 			background-color: #ffffff;
 			color: #333366;
 			font-family: tahoma, verdana, sans-serif;
-			font-size: 9pt;
+			font-size: 14pt;
 		}
 		
 		h2, h3, h4 {
@@ -25,6 +26,11 @@
 		img {
 			border: 0 none;
 		}
+		
+		td, th {
+			text-align: left;
+			vertical-align: top;
+		}
 
 		#head {
 			margin: 0 0 0.5em 0;
@@ -35,12 +41,12 @@
 		
 			#head h1 {
 				margin: 0;
-				font-size: 48pt;
+				font-size: 32pt;
 				font-weight: normal;
 			}
 			
 			#head .tagline {
-				font-size: 150%;
+				font-size: 95%;
 			} 
 			
 		#main {
@@ -55,6 +61,27 @@
 			border-width: 1px 0 0 0;
 			border-style: solid;
 		}
+		
+		table.resorts {
+			border-spacing: 0;
+			border-width: 1px 0 0 0;
+			border-color: #999999;
+			border-style: solid;
+		}
+		
+			table.resorts td, 
+			table.resorts th {
+				padding: 0.5em;
+				background-color: #EEEEEE;
+				border-width: 0 0 1px 0;
+				border-color: #999999;
+				border-style: solid;
+			}
+		
+			table.resorts tr.even td, 
+			table.resorts tr.even th {
+				background-color: #ffffff;
+			}
 		
 		.open {
 			color: #00DD33;

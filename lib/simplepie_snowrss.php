@@ -46,8 +46,6 @@ class SimplePie_SnowRSS extends SimplePie {
 		else {
 			return null;
 		}
-		
-		return $date_parsed;
 	}
 
 	function get_snowrss_scheduled_close_date ($date_format = 'j F Y, g:i a') {

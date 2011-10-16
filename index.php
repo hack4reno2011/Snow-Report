@@ -5,17 +5,23 @@ require_once('contrib/tropo/tropo.class.php');
 require_once('contrib/simplepie/simplepie.inc');
 require_once('lib/simplepie_snowrss.php');
 
-if ( $_REQUEST['f'] == 'voice' ) {
-	# tropo
-	$format = 'voice';
-}
-elseif ( $_REQUEST['f'] == 'rss' ) {
-	# tropo
-	$format = 'rss';
-}
-elseif ( $_REQUEST['f'] == 'html' ) {
-	# tropo
-	$format = 'html';
+if ( isset($_REQUEST['f']) ) {
+	if ( $_REQUEST['f'] == 'voice' ) {
+		# tropo
+		$format = 'voice';
+	}
+	elseif ( $_REQUEST['f'] == 'rss' ) {
+		# tropo
+		$format = 'rss';
+	}
+	elseif ( $_REQUEST['f'] == 'html' ) {
+		# tropo
+		$format = 'html';
+	}
+	else {
+		# tropo
+		$format = 'html';
+	}
 }
 else {
 	# tropo
@@ -23,12 +29,12 @@ else {
 }
 
 $feeds = array();
-for ( $idx = 0; $idx < count($resorts); $idx++ ) {
-	$feeds[$idx] = new SimplePie_SnowRSS($resorts['mtrose']);  
-	$feeds[$idx]->set_cache_location(sys_get_temp_dir());
-	$feeds[$idx]->set_item_class('SimplePie_Item_SnowRSS');
-	$feeds[$idx]->init();
-	$feeds[$idx]->handle_content_type();
+foreach ($resorts as $resort => $url) {
+	$feeds[$resort] = new SimplePie_SnowRSS($url);  
+	$feeds[$resort]->set_cache_location(sys_get_temp_dir());
+	$feeds[$resort]->set_item_class('SimplePie_Item_SnowRSS');
+	$feeds[$resort]->init();
+	$feeds[$resort]->handle_content_type();
 }
 
 
@@ -42,6 +48,86 @@ if ($format == 'html') {
 	$T->set('body', $Body);
 	
 	echo($T->fetch());
+	exit;
+}
+if ($format == 'voice') {
+	$tropo = new Tropo(); 
+	
+	if ( ! $_REQUEST['uri'] ) {
+		// Welcome prompt.
+    	$tropo->say('Welcome to Snow Line');
+ 
+		// Set up options for input.
+		$options = array(
+			"attempts" => 3, 
+			"bargein"  => true, 
+			"choices"  => 'Mount Rose, Blueberry Hill, Mount Marley', 
+			"name"     => "resort", 
+			"timeout"  => 30, 
+			"voice"    => $tropo_voice
+		);
+ 
+		// Ask the caller for input, pass in options.
+		$tropo->ask('Please speak the name of a ski resort', 
+			$options
+		);
+		
+		# Tell Tropo what to do when the user has entered input, 
+		# or if there's an error. 
+		$tropo->on(array(
+			"event" => "continue", 
+			"next"  => "index.php?f=voice&uri=choice", 
+			"say"   => "One moment."
+		));
+		$tropo->on(array(
+			"event" => "error", 
+			"next"  => "index.php?f=voice&uri=incomplete"
+		));
+     
+ 	}
+	elseif ( $_REQUEST['uri'] == 'choice' ) {
+
+		$result = new Result();
+		$choice = $result->getValue();
+$resort = 'mtrose';
+		if ( isset($feeds[$resort])) {
+			$conditions = $feed->get_snowrss_resort_name() 
+				. ' is currently ';
+				
+			if ( strtolower($feed->get_snowrss_status()) == 'open' ) {
+				$conditions .= ' open';
+				if ($close_date = $feed->get_snowrss_scheduled_close_date('F jS') ) {
+					$conditions .= ', but is scheduled to close on ' 
+						. $close_date;
+				}
+			}
+			elseif ( strtolower($feed->get_snowrss_status()) == 'closed' ) {
+				$conditions .= ' closed';
+				if ($open_date = $feed->get_snowrss_scheduled_open_date() ) {
+					$conditions .= ', but is scheduled to open on ' 
+						. $open_date;
+				}
+			}
+			else {
+				$conditions .= ' unknown';
+			}
+			$tropo->say(
+				"You chose " . $choice . $conditions, 
+				array("voice" => $tropo_voice)
+			);
+		}
+		else {
+			$tropo->say("I'm confused again.");
+		}
+		
+ 	}
+	elseif ( $_REQUEST['uri'] == 'error' ) {
+		$tropo->say("I'm confused now", array("voice" => $tropo_voice));
+	}
+ 
+    $tropo->RenderJson();
+
+	echo("\n");
 	exit;
 }
 
