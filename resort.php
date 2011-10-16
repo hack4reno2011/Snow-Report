@@ -45,10 +45,19 @@ $feed->handle_content_type();
 
 
 if ($format == 'html') {
-	$Body = new Template('templates/resort.php');
+	if ( $mobile ) {
+		$body_tpl = 'templates/resort.php';
+		$page_tpl = 'templates/mobile/default.php';
+	}
+	else {
+		$body_tpl = 'templates/resort.php';
+		$page_tpl = 'templates/default.php';
+	}
+	
+	$Body = new Template($body_tpl);
 	$Body->set('feed', $feed);
 	
-	$T = new Template('templates/default.php');
+	$T = new Template($page_tpl);
 	$T->set('title', 'SnowLine');
 	$T->set('tagline', 'A SnowRSS Aggregator');
 	$T->set('body', $Body);

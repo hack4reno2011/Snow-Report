@@ -44,10 +44,19 @@ foreach ($resorts as $code => $info) {
 
 
 if ($format == 'html') {
-	$Body = new Template('templates/home.php');
+	if ( $mobile ) {
+		$body_tpl = 'templates/mobile/home.php';
+		$page_tpl = 'templates/mobile/default.php';
+	}
+	else {
+		$body_tpl = 'templates/home.php';
+		$page_tpl = 'templates/default.php';
+	}
+	
+	$Body = new Template($body_tpl);
 	$Body->set('feeds', $feeds);
 	
-	$T = new Template('templates/default.php');
+	$T = new Template($page_tpl);
 	$T->set('title', 'SnowLine');
 	$T->set('tagline', 'A SnowRSS Aggregator');
 	$T->set('body', $Body);
