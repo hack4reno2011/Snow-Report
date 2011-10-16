@@ -19,7 +19,7 @@ Welcome to <strong>SnowLine</strong>!  We collect snow conditions from different
 		<? ENDIF; ?>
 	<? ELSEIF ( strtolower($feed->get_snowrss_status()) == 'closed' ): ?>
 		<span class="closed">Closed</span>
-		<? IF ($open_date = $feed->get_snowrss_scheduled_open_date() ): ?>
+		<? IF ($open_date = $feed->get_snowrss_scheduled_open_date('n/j/Y') ): ?>
 		(<?= HtmlSpecialChars($open_date); ?>)
 		<? ENDIF; ?>
 	<? ELSE: ?>
