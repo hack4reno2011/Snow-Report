@@ -92,12 +92,14 @@ if ($format == 'voice') {
  	}
 	elseif ( $_REQUEST['goto'] == 'choice' ) {
 
-#		$result = new Result();
-#		$choice = $result->getValue();
-$resort = 'mtrose';
-		if ( isset($feeds[$resort])) {
-			$feed =& $feeds[$resort];
-			$resort_name = $feed->get_snowrss_resort_name();
+		$result = new Result();
+		$choice = $result->getValue();
+#$choice = 'Mount Rose';
+		if ( isset($resort_names[$choice])) {
+			
+			$resort_name = $choice;
+			$code = $resort_names[$choice];
+			$feed =& $feeds[$code];
 			$conditions = $resort_name . ' is currently ';
 				
 			if ( strtolower($feed->get_snowrss_status()) == 'open' ) {
