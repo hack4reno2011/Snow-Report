@@ -61,6 +61,10 @@
 			border-width: 1px 0 0 0;
 			border-style: solid;
 		}
+
+			#foot a {
+				text-decoration: none;
+			}
 		
 		table.resorts {
 			border-spacing: 0;
